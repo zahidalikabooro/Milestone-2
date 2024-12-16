@@ -1,241 +1,161 @@
-/* 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    width: 100%;
-    max-width: 600px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  fieldset {
-    border: 1px solid #d3d3d3;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
-  
-  legend {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #2980b9;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: #34495e;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #d3d3d3;
-    border-radius: 4px;
-    font-size: 1em;
-  }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="tel"]:focus,
-  textarea:focus {
-    border-color: #2980b9;
-    outline: none;
-    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    font-size: 1em;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #2980b9;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #1f6a8e;
-  }
-  
-  #resume-display {
-    width: 100%;
-    max-width: 600px;
-    background-color: #ecf0f1;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #resume-display h2 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  
-  #resume-display p {
-    margin: 5px 0;
-    font-size: 1em;
-    color: #555;
-  }
-   
-
-
-     */
-
-
-
-
-/* style.css */
-
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Clean and modern font */
   background-color: #f0f4f8;
   color: #333;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 30px;
+  font-size: 16px;
 }
 
+/* Heading Styling */
 h1 {
   text-align: center;
   color: #2c3e50;
   margin: 20px 0;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-weight: 700;
 }
 
+/* Form Styling */
 form {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2980b9;
 }
 
+/* Fieldset Styling */
 fieldset {
-  border: 1px solid #d3d3d3;
-  padding: 15px;
+  border: 2px solid #d3d3d3;
+  padding: 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  background-color: #f9fafb;
 }
 
+/* Legend Styling */
 legend {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
   color: #2980b9;
+  padding: 0 10px;
+  background-color: #ffffff;
 }
 
+/* Label Styling */
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: 600;
   color: #34495e;
+  font-size: 1em;
 }
 
+/* Input and Textarea Styling */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #d3d3d3;
-  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #d3d3d3;
+  border-radius: 6px;
   font-size: 1em;
+  background-color: #f9fafb;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+/* Focus Effects */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
   border-color: #2980b9;
+  box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
   outline: none;
-  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
 }
 
+/* Textarea Styling */
 textarea {
   resize: vertical;
 }
 
+/* Button Styling */
 button {
   width: 100%;
-  padding: 12px;
-  font-size: 1em;
+  padding: 14px;
+  font-size: 1.2em;
   font-weight: bold;
   color: #ffffff;
   background-color: #2980b9;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
 button:hover {
   background-color: #1f6a8e;
+  transform: scale(1.05);
 }
 
+/* Resume Display Styling */
 #resume-display {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background-color: #ecf0f1;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #2980b9;
 }
 
 #resume-display h2 {
   color: #2c3e50;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  font-weight: 700;
 }
 
 #resume-display p {
-  margin: 5px 0;
-  font-size: 1em;
+  margin: 8px 0;
+  font-size: 1.1em;
   color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  #resume-display {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
 }

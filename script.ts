@@ -10,9 +10,10 @@ form.addEventListener("submit",(event :Event) =>{
     const name = (document.getElementById("name") as HTMLInputElement).value
     const email = (document.getElementById("email") as HTMLInputElement).value
     const phone = (document.getElementById("phone") as HTMLInputElement).value
-    const education = (document.getElementById("education") as HTMLInputElement).value
-    const experience = (document.getElementById("experience") as HTMLInputElement).value
-    const skills = (document.getElementById("skills") as HTMLInputElement).value
+    const education = (document.getElementById("education") as HTMLTextAreaElement).value;
+
+    const experience = (document.getElementById("experience") as HTMLTextAreaElement).value
+    const skills = (document.getElementById("skills") as HTMLTextAreaElement).value
 
 
 // Generate the resume content dynamically
@@ -31,7 +32,7 @@ const resumeHTML = `
 
 <h3>Skills</h3>
 <p>${skills} </p>
-`;
+`
 // Display the generated resume
 if(resumeDisplayElement) {
     resumeDisplayElement.innerHTML = resumeHTML
